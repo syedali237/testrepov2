@@ -11,12 +11,13 @@ app.use(cookieParser());
 import connectToDB from './config/db.js';
 connectToDB();
 
-const corsOptions = {
-  origin: 'https://expense-i.netlify.app/',
-  credentials: true, 
-};
+// const corsOptions = {
+//   origin: 'https://expense-i.netlify.app/',
+//   credentials: true, 
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors);
 app.use(express.json());
 
 app.get('/', (_req, res) => {
