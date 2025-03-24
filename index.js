@@ -12,7 +12,7 @@ import connectToDB from './config/db.js';
 connectToDB();
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://expense-i.netlify.app/',
   credentials: true, 
 };
 
